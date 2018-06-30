@@ -53,6 +53,21 @@ npm run build
 serve -s ./build -p 80
 ```
 
+# rap2-docker
+docker部署淘宝rap2服务
+
+## 后端部署
+
+```cmd
+> cd rap2-delos
+> docker-compose up -d
+> docker exec -it rap2-delos sh
+> node scripts/init
+> exit
+> docker-compose down
+> docker-compose up -d
+```
+
 ## 前端部署
 
 修改`src/config/config.prod.js`中的后端服务器地址
@@ -74,6 +89,7 @@ module.exports = {
 > cd rap2-dolores
 > docker-compose up -d
 ```
+
 
 
 ## Author
